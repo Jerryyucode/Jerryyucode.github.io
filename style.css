@@ -83,35 +83,20 @@ a {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background:
-    radial-gradient(circle at 50% 20%, rgba(255,255,255,0.25), rgba(255,255,255,0) 24%),
-    linear-gradient(rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.38)),
-    linear-gradient(180deg, #2f4127 0%, #162012 100%);
+  background-image: url("images/forest-hero.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .hero-section::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(78deg, transparent 8%, rgba(70, 49, 29, 0.72) 8.6%, rgba(70, 49, 29, 0.72) 10.1%, transparent 10.8%),
-    linear-gradient(92deg, transparent 23%, rgba(79, 56, 34, 0.62) 23.7%, rgba(79, 56, 34, 0.62) 24.9%, transparent 25.5%),
-    linear-gradient(106deg, transparent 40%, rgba(68, 49, 30, 0.7) 40.6%, rgba(68, 49, 30, 0.7) 41.8%, transparent 42.4%),
-    linear-gradient(86deg, transparent 57%, rgba(76, 54, 32, 0.66) 57.6%, rgba(76, 54, 32, 0.66) 58.9%, transparent 59.5%),
-    linear-gradient(99deg, transparent 74%, rgba(72, 52, 31, 0.68) 74.8%, rgba(72, 52, 31, 0.68) 75.9%, transparent 76.5%),
-    radial-gradient(circle at 12% 18%, rgba(72, 120, 61, 0.92), transparent 18%),
-    radial-gradient(circle at 25% 72%, rgba(58, 96, 47, 0.88), transparent 22%),
-    radial-gradient(circle at 48% 16%, rgba(80, 132, 69, 0.92), transparent 20%),
-    radial-gradient(circle at 68% 28%, rgba(60, 102, 50, 0.88), transparent 22%),
-    radial-gradient(circle at 82% 72%, rgba(71, 116, 58, 0.9), transparent 23%),
-    radial-gradient(circle at 92% 16%, rgba(49, 83, 41, 0.82), transparent 17%);
-  transform: scale(1.04);
+  display: none;
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.18);
+  background: rgba(0, 0, 0, 0.34);
 }
 
 .hero-content {
