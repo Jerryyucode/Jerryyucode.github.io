@@ -94,9 +94,7 @@ a {
 }
 
 .hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.10);
+  display: none;
 }
 
 .hero-content {
