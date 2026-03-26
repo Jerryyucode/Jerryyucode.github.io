@@ -429,24 +429,29 @@ a {
 }
 
 .contact-grid {
-  max-width: 1400px;
+  max-width: 1720px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1.1fr;
-  gap: 80px;
+  grid-template-columns: 0.95fr 1.15fr;
+  gap: 90px;
   align-items: start;
 }
 
+.contact-left {
+  padding-top: 10px;
+}
+
 .contact-left h2 {
-  margin: 0 0 24px;
-  font-size: clamp(3rem, 4vw, 4.8rem);
+  margin: 0 0 34px;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(4.2rem, 5.4vw, 5.8rem);
   font-weight: 400;
-  line-height: 1.05;
+  line-height: 0.95;
 }
 
 .contact-left p {
   margin: 0;
-  max-width: 420px;
+  max-width: 540px;
   font-size: 1.05rem;
   line-height: 1.7;
 }
@@ -454,53 +459,112 @@ a {
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 26px;
+  gap: 28px;
 }
 
-.form-row {
+.form-block {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.group-label {
+  display: block;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.name-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.field-group {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.form-row label {
+.field-group label {
   font-size: 1rem;
+  line-height: 1.2;
 }
 
-.form-row input,
-.form-row textarea {
+.field-group label span {
+  color: #666;
+}
+
+.field-group input,
+.field-group textarea {
   width: 100%;
-  padding: 16px 0;
-  border: none;
-  border-bottom: 1px solid #222;
+  border: 2px solid #1e1e1e;
+  border-radius: 999px;
   background: transparent;
   font: inherit;
   color: #111;
+  padding: 0 22px;
 }
 
-.form-row input:focus,
-.form-row textarea:focus {
-  outline: none;
+.field-group input {
+  height: 66px;
 }
 
-.form-row textarea {
-  min-height: 120px;
+.field-group textarea {
+  min-height: 160px;
+  padding: 22px;
+  border-radius: 28px;
   resize: vertical;
 }
 
+.field-group input:focus,
+.field-group textarea:focus {
+  outline: none;
+}
+
 .send-button {
-  margin-top: 18px;
+  margin-top: 4px;
   align-self: flex-start;
-  min-width: 160px;
+  min-width: 140px;
   height: 64px;
-  padding: 0 30px;
+  padding: 0 28px;
   border: none;
   border-radius: 999px;
-  background: #111;
+  background: #050505;
   color: #fff;
-  font: inherit;
+  font-family: "Cormorant Garamond", Georgia, serif;
   font-size: 1rem;
+  font-weight: 500;
   cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .contact-left p {
+    max-width: 640px;
+  }
+}
+
+@media (max-width: 700px) {
+  .name-row {
+    grid-template-columns: 1fr;
+  }
+
+  .field-group input {
+    height: 60px;
+  }
+
+  .field-group textarea {
+    min-height: 140px;
+  }
+
+  .send-button {
+    width: 100%;
+  }
 }
 
 @media (max-width: 900px) {
