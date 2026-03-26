@@ -564,6 +564,82 @@ a {
   border: 1px solid #e2b8b8;
 }
 
+.site-footer {
+  padding: 90px 24px 70px;
+  background: #f4f2ee;
+}
+
+.footer-grid {
+  max-width: 1720px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.footer-logo {
+  margin-bottom: 34px;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(3rem, 4vw, 4.3rem);
+  font-weight: 400;
+  line-height: 0.95;
+}
+
+.footer-brand p,
+.footer-hours p,
+.footer-contact p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.footer-hours,
+.footer-contact {
+  text-align: center;
+}
+
+.footer-hours h3,
+.footer-contact h3 {
+  margin: 0 0 22px;
+  font-size: 1rem;
+  line-height: 1.3;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.footer-hours-gap {
+  height: 22px;
+}
+
+.footer-contact a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.footer-contact p + p,
+.footer-hours p + p {
+  margin-top: 2px;
+}
+
+@media (max-width: 1000px) {
+  .site-footer {
+    padding: 70px 24px 50px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+
+  .footer-brand,
+  .footer-hours,
+  .footer-contact {
+    text-align: center;
+  }
+}
+
 @media (max-width: 1100px) {
   .contact-grid {
     grid-template-columns: 1fr;
