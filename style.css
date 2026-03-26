@@ -332,6 +332,9 @@ a {
 
 .testimonial-card {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .quote {
@@ -341,7 +344,7 @@ a {
 }
 
 .author {
-  margin: 0;
+  margin: auto 0 0;
   font-size: 1rem;
   line-height: 1.5;
 }
