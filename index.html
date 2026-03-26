@@ -174,22 +174,27 @@
     </div>
 
     <div class="contact-right">
-      <form
-        class="contact-form"
-        action="https://formspree.io/f/mgopvvbl"
-        method="POST"
-      >
+      <div class="form-status-success" data-fs-success>
+        Thank you. Your message has been submitted successfully.
+      </div>
+
+      <div class="form-status-error" data-fs-error>
+        Something went wrong. Please try again.
+      </div>
+
+      <form class="contact-form" id="contact-form">
         <div class="form-block">
           <label class="group-label">Name</label>
+
           <div class="name-row">
             <div class="field-group">
               <label for="first-name">First Name <span>(required)</span></label>
-              <input id="first-name" name="first_name" type="text" required />
+              <input id="first-name" name="first_name" type="text" required data-fs-field />
             </div>
 
             <div class="field-group">
               <label for="last-name">Last Name <span>(required)</span></label>
-              <input id="last-name" name="last_name" type="text" required />
+              <input id="last-name" name="last_name" type="text" required data-fs-field />
             </div>
           </div>
         </div>
@@ -197,20 +202,20 @@
         <div class="form-block">
           <div class="field-group">
             <label for="email">Email <span>(required)</span></label>
-            <input id="email" name="email" type="email" required />
+            <input id="email" name="email" type="email" required data-fs-field />
           </div>
         </div>
 
         <div class="form-block">
           <div class="field-group">
             <label for="message">Message <span>(required)</span></label>
-            <textarea id="message" name="message" required></textarea>
+            <textarea id="message" name="message" required data-fs-field></textarea>
           </div>
         </div>
 
         <input type="hidden" name="_subject" value="New StudyWise inquiry" />
 
-        <button type="submit" class="send-button">Send</button>
+        <button type="submit" class="send-button" data-fs-submit-btn>Send</button>
       </form>
     </div>
   </div>
@@ -220,5 +225,21 @@
     
   </main>
   <script src="script.js"></script>
+
+<!-- Below is Formspree no build set up -->
+<script>
+  window.formspree =
+    window.formspree ||
+    function () {
+      (formspree.q = formspree.q || []).push(arguments);
+    };
+
+  formspree('initForm', {
+    formElement: '#contact-form',
+    formId: 'mgopvvbl'
+  });
+</script>
+<script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+  
 </body>
 </html>
