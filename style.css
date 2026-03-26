@@ -538,6 +538,30 @@ a {
   cursor: pointer;
 }
 
+.form-status-success,
+.form-status-error {
+  display: none;
+  margin-bottom: 18px;
+  padding: 16px 20px;
+  border-radius: 18px;
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+
+.form-status-success:not(:empty) {
+  display: block;
+  background: #eef6ee;
+  color: #1f4d28;
+  border: 1px solid #b9d7be;
+}
+
+.form-status-error:not(:empty) {
+  display: block;
+  background: #fbeeee;
+  color: #7a1f1f;
+  border: 1px solid #e2b8b8;
+}
+
 @media (max-width: 1100px) {
   .contact-grid {
     grid-template-columns: 1fr;
