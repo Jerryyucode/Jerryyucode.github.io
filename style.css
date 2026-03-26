@@ -174,24 +174,15 @@ a {
 .why-section {
   position: relative;
   padding: 86px 24px 110px;
-  background: #f3f1ed;
+  background-image: url("images/index-background.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   overflow: hidden;
 }
 
 .why-decor {
-  position: absolute;
-  left: 70px;
-  bottom: 28px;
-  width: 330px;
-  height: 330px;
-  border-radius: 28px;
-  opacity: 0.45;
-  background:
-    radial-gradient(circle at 30% 36%, rgba(120, 142, 95, 0.85), rgba(120, 142, 95, 0.85) 16%, transparent 17%),
-    radial-gradient(circle at 54% 22%, rgba(145, 164, 110, 0.82), rgba(145, 164, 110, 0.82) 13%, transparent 14%),
-    radial-gradient(circle at 62% 44%, rgba(124, 145, 94, 0.82), rgba(124, 145, 94, 0.82) 14%, transparent 15%),
-    radial-gradient(circle at 40% 58%, rgba(135, 154, 102, 0.82), rgba(135, 154, 102, 0.82) 15%, transparent 16%),
-    linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(210,210,210,0.75) 100%);
+  display: none;
 }
 
 .why-content {
@@ -223,27 +214,17 @@ a {
 }
 
 .services-section {
-  padding: 92px 24px 96px;
-  background:
-    linear-gradient(#d9d7d7, #d9d7d7),
-    radial-gradient(ellipse at top left, rgba(255,255,255,0.95) 0 10%, transparent 11%),
-    radial-gradient(ellipse at top right, rgba(255,255,255,0.95) 0 10%, transparent 11%);
   position: relative;
+  padding: 92px 24px 96px;
+  background-image: url("images/index-service.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   overflow: hidden;
 }
 
 .services-section::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  opacity: 0.55;
-  background:
-    linear-gradient(35deg, transparent 8%, rgba(255,255,255,0.9) 8.5%, rgba(255,255,255,0.9) 10.5%, transparent 11%),
-    linear-gradient(125deg, transparent 21%, rgba(255,255,255,0.9) 21.7%, rgba(255,255,255,0.9) 23.7%, transparent 24.4%),
-    linear-gradient(35deg, transparent 39%, rgba(255,255,255,0.9) 39.7%, rgba(255,255,255,0.9) 41.7%, transparent 42.4%),
-    linear-gradient(125deg, transparent 58%, rgba(255,255,255,0.92) 58.8%, rgba(255,255,255,0.92) 60.8%, transparent 61.4%),
-    linear-gradient(35deg, transparent 76%, rgba(255,255,255,0.88) 76.8%, rgba(255,255,255,0.88) 78.8%, transparent 79.4%);
-  pointer-events: none;
+  display: none;
 }
 
 .services-grid {
@@ -272,21 +253,24 @@ a {
 }
 
 .placeholder-one {
-  background:
-    linear-gradient(rgba(0,0,0,0.08), rgba(0,0,0,0.08)),
-    linear-gradient(135deg, #cfc9c1 0%, #8c8f8b 100%);
+  background-image: url("images/index-service-1.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .placeholder-two {
-  background:
-    linear-gradient(rgba(0,0,0,0.06), rgba(0,0,0,0.06)),
-    linear-gradient(135deg, #ded7cd 0%, #b49e8d 100%);
+  background-image: url("images/index-service-2.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .placeholder-three {
-  background:
-    linear-gradient(rgba(0,0,0,0.06), rgba(0,0,0,0.06)),
-    linear-gradient(135deg, #dfdacd 0%, #998f7e 100%);
+  background-image: url("images/index-service-3.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .service-card h3 {
@@ -325,21 +309,15 @@ a {
 .testimonials-section {
   position: relative;
   padding: 96px 24px 110px;
-  background: #f4f2ee;
+  background-image: url("images/index-testimonials.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   overflow: hidden;
 }
 
 .testimonial-decor {
-  position: absolute;
-  right: 110px;
-  top: 40px;
-  width: 380px;
-  height: 520px;
-  opacity: 0.28;
-  background:
-    radial-gradient(circle at 50% 18%, rgba(233, 210, 186, 0.9), rgba(233, 210, 186, 0.9) 18%, transparent 19%),
-    linear-gradient(180deg, transparent 0 38%, rgba(179,169,161,0.7) 38% 100%);
-  border-radius: 180px 180px 18px 18px;
+  display: none;
 }
 
 .testimonials-grid {
