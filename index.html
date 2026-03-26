@@ -167,30 +167,45 @@
     <div class="contact-left">
       <h2>Contact Us</h2>
       <p>
-        Contact us to learn more about tutoring, admissions guidance, and personalized academic support, 
-        or to schedule a free 15-minute info session with our team. We look forward to hearing from you.
+        Contact us to learn more about tutoring, admissions guidance, and personalized
+        academic support, or to schedule a free 15-minute info session with our team.
+        We look forward to hearing from you.
       </p>
     </div>
 
     <div class="contact-right">
       <form
         class="contact-form"
-        action="https://formspree.io/f/mgopvvbl"
+        action="https://formspree.io/f/YOUR_FORM_ID"
         method="POST"
       >
-        <div class="form-row">
-          <label for="name">Name</label>
-          <input id="name" name="name" type="text" required />
+        <div class="form-block">
+          <label class="group-label">Name</label>
+          <div class="name-row">
+            <div class="field-group">
+              <label for="first-name">First Name <span>(required)</span></label>
+              <input id="first-name" name="first_name" type="text" required />
+            </div>
+
+            <div class="field-group">
+              <label for="last-name">Last Name <span>(required)</span></label>
+              <input id="last-name" name="last_name" type="text" required />
+            </div>
+          </div>
         </div>
 
-        <div class="form-row">
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" required />
+        <div class="form-block">
+          <div class="field-group">
+            <label for="email">Email <span>(required)</span></label>
+            <input id="email" name="email" type="email" required />
+          </div>
         </div>
 
-        <div class="form-row">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" required></textarea>
+        <div class="form-block">
+          <div class="field-group">
+            <label for="message">Message <span>(required)</span></label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
         </div>
 
         <input type="hidden" name="_subject" value="New StudyWise inquiry" />
