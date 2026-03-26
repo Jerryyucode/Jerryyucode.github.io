@@ -753,7 +753,7 @@ a {
 }
 
 .about-section {
-  padding: 110px 32px 70px;
+  padding: 128px 32px 70px;
   background: #f4f2ee;
 }
 
@@ -824,4 +824,43 @@ a {
   .about-image-placeholder {
     max-width: 760px;
   }
+}
+
+/* force solid navbar on subpages */
+body.subpage .site-header {
+  background: #ffffff !important;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  transition: none !important;
+}
+
+body.subpage .site-header.scrolled {
+  background: #ffffff !important;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08) !important;
+}
+
+body.subpage .logo,
+body.subpage .nav-links a {
+  color: #111 !important;
+}
+
+body.subpage .contact-pill {
+  background: #050505 !important;
+  color: #fff !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+body.subpage .active-link {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 1.5px;
+}
+
+body.subpage .nav-links a:focus,
+body.subpage .nav-links a:active,
+body.subpage .nav-links a:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
 }
