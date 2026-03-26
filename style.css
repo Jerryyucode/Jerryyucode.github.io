@@ -68,6 +68,20 @@ a {
   font-weight: 500;
 }
 
+.contact-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 158px;
+  height: 58px;
+  padding: 0 28px;
+  border-radius: 999px;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
 .hero-content {
   position: relative;
   z-index: 2;
