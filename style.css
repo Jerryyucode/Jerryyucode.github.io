@@ -540,7 +540,6 @@ a {
 
 .form-status-success,
 .form-status-error {
-  display: none;
   margin-bottom: 18px;
   padding: 16px 20px;
   border-radius: 18px;
@@ -548,15 +547,18 @@ a {
   line-height: 1.5;
 }
 
-.form-status-success:not(:empty) {
-  display: block;
+.form-status-success[hidden],
+.form-status-error[hidden] {
+  display: none;
+}
+
+.form-status-success {
   background: #eef6ee;
   color: #1f4d28;
   border: 1px solid #b9d7be;
 }
 
-.form-status-error:not(:empty) {
-  display: block;
+.form-status-error {
   background: #fbeeee;
   color: #7a1f1f;
   border: 1px solid #e2b8b8;
