@@ -160,6 +160,49 @@
         </article>
       </div>
     </section>
+
+    <!-- Below is the implementation of the Contact Us form -->
+<section class="contact-section">
+  <div class="contact-grid">
+    <div class="contact-left">
+      <h2>Contact Us</h2>
+      <p>
+        Reach out to learn more about tutoring, admissions guidance, and customized
+        academic support. We’d be happy to hear from you.
+      </p>
+    </div>
+
+    <div class="contact-right">
+      <form
+        class="contact-form"
+        action="https://formspree.io/f/mgopvvbl"
+        method="POST"
+      >
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required />
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+
+        <input type="hidden" name="_subject" value="New StudyWise inquiry" />
+
+        <button type="submit" class="send-button">Send</button>
+      </form>
+    </div>
+  </div>
+</section>
+    <!-- Above is the implementation of the Contact Us form -->
+
+    
   </main>
   <script src="script.js"></script>
 </body>
