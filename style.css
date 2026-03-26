@@ -46,20 +46,6 @@ a {
   justify-content: space-between;
 }
 
-.contact-pill {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 142px;
-  height: 52px;
-  padding: 0 24px;
-  border-radius: 999px;
-  background: #ece8e2;
-  color: #111 !important;
-  border: 2px solid #111;
-  box-shadow: 0 0 0 2px #ece8e2;
-}
-
 .logo {
   font-family: "Cormorant Garamond", Georgia, serif;
   font-size: 1rem;
@@ -732,13 +718,6 @@ a {
   color: #111;
 }
 
-.subpage .contact-pill {
-  background: #050505;
-  color: #fff !important;
-  border: none;
-  box-shadow: none;
-}
-
 .active-link {
   text-decoration: underline;
   text-underline-offset: 6px;
@@ -845,13 +824,6 @@ body.subpage .nav-links a {
   color: #111 !important;
 }
 
-body.subpage .contact-pill {
-  background: #050505 !important;
-  color: #fff !important;
-  border: none !important;
-  box-shadow: none !important;
-}
-
 body.subpage .active-link {
   text-decoration: underline;
   text-underline-offset: 6px;
@@ -862,5 +834,21 @@ body.subpage .nav-links a:focus,
 body.subpage .nav-links a:active,
 body.subpage .nav-links a:focus-visible {
   outline: none !important;
+  box-shadow: none !important;
+}
+
+/* index homepage button */
+body:not(.subpage) .contact-pill {
+  background: #ece8e2 !important;
+  color: #111 !important;
+  border: 2px solid #111 !important;
+  box-shadow: 0 0 0 2px #ece8e2 !important;
+}
+
+/* subpage button: about / services / faqs / contact */
+body.subpage .nav-links .contact-pill {
+  background: #050505 !important;
+  color: #fff !important;
+  border: none !important;
   box-shadow: none !important;
 }
