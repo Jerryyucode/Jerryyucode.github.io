@@ -715,8 +715,13 @@ a {
 
 <!-- About Subpage -->
 .subpage .site-header {
-  background: #f8f7f4;
-  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.10);
+  background: #f8f7f4 !important;
+  box-shadow:
+    0 1px 0 rgba(0, 0, 0, 0.04),
+    0 10px 20px rgba(0, 0, 0, 0.06);
+  transition: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
 }
 
 .subpage .nav-links a {
@@ -737,6 +742,14 @@ a {
 .active-link {
   text-decoration: underline;
   text-underline-offset: 6px;
+  text-decoration-thickness: 1.5px;
+}
+
+.nav-links a:focus,
+.nav-links a:active,
+.nav-links a:focus-visible {
+  outline: none;
+  box-shadow: none;
 }
 
 .about-section {
