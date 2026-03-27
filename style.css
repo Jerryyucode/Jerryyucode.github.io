@@ -924,26 +924,38 @@ body.subpage .nav-links .contact-pill {
 /* placeholder images */
 .service-page-image-1 {
   background:
-    linear-gradient(rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.02)),
-    linear-gradient(135deg, #d8d0c3 0%, #b59b7d 100%);
+    linear-gradient(rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03)),
+    url("images/service-1.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .service-page-image-2 {
   background:
-    linear-gradient(rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.02)),
-    linear-gradient(135deg, #ddd4c7 0%, #c1aa8e 100%);
+    linear-gradient(rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03)),
+    url("images/service-2.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .service-page-image-3 {
   background:
-    linear-gradient(rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.02)),
-    linear-gradient(135deg, #d3c6b6 0%, #a98c70 100%);
+    linear-gradient(rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03)),
+    url("images/service-3.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .service-page-image-4 {
   background:
-    linear-gradient(rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.02)),
-    linear-gradient(135deg, #cebba8 0%, #96755b 100%);
+    linear-gradient(rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03)),
+    url("images/service-4.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .service-page-content {
