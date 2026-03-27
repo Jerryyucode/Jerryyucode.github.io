@@ -881,3 +881,126 @@ body.subpage .nav-links .contact-pill {
   border: none !important;
   box-shadow: none !important;
 }
+
+.services-page-section {
+  padding: 116px 32px 70px;
+  background: #f4f2ee;
+}
+
+.services-page-section h1 {
+  max-width: 1720px;
+  margin: 0 auto 48px;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(4.2rem, 5.6vw, 6rem);
+  font-weight: 400;
+  line-height: 0.96;
+}
+
+.services-page-grid {
+  max-width: 1720px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 54px 32px;
+  align-items: start;
+}
+
+.service-page-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-page-image {
+  width: 100%;
+  aspect-ratio: 1.75 / 1;
+  margin-bottom: 20px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.service-page-image-1 {
+  background:
+    linear-gradient(rgba(0,0,0,0.02), rgba(0,0,0,0.02)),
+    linear-gradient(135deg, #c9b8a6 0%, #a98a6b 100%);
+}
+
+.service-page-image-2 {
+  background:
+    linear-gradient(rgba(0,0,0,0.02), rgba(0,0,0,0.02)),
+    linear-gradient(135deg, #d8ccb9 0%, #b59c80 100%);
+}
+
+.service-page-image-3 {
+  background:
+    linear-gradient(rgba(0,0,0,0.02), rgba(0,0,0,0.02)),
+    linear-gradient(135deg, #cfbfae 0%, #9f8267 100%);
+}
+
+.service-page-image-4 {
+  background:
+    linear-gradient(rgba(0,0,0,0.02), rgba(0,0,0,0.02)),
+    linear-gradient(135deg, #ccb9a7 0%, #8d6e55 100%);
+}
+
+.service-page-card h2 {
+  margin: 0 0 18px;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(3rem, 4vw, 4.3rem);
+  font-weight: 400;
+  line-height: 0.95;
+}
+
+.service-price {
+  margin: 0 0 20px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.service-description {
+  margin: 0 0 34px;
+  max-width: 720px;
+  font-size: 1.02rem;
+  line-height: 1.68;
+}
+
+.service-page-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  min-width: 260px;
+  height: 72px;
+  padding: 0 34px;
+  border-radius: 999px;
+  border: 2px solid #1a1a1a;
+  color: #111;
+  background: transparent;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+@media (max-width: 1100px) {
+  .services-page-grid {
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+
+  .service-description {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .services-page-section {
+    padding: 108px 20px 54px;
+  }
+
+  .service-page-button {
+    min-width: 220px;
+    height: 64px;
+    padding: 0 28px;
+  }
+}
