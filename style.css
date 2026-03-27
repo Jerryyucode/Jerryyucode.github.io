@@ -882,6 +882,7 @@ body.subpage .nav-links .contact-pill {
   box-shadow: none !important;
 }
 
+/* service page code */
 .services-page-section {
   padding: 138px 32px 86px;
   background: #f4f2ee;
@@ -923,31 +924,31 @@ body.subpage .nav-links .contact-pill {
 /* placeholder images */
 .service-page-image-1 {
   background:
-    linear-gradient(rgba(0,0,0,0.02), rgba(0,0,0,0.02)),
+    linear-gradient(rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.02)),
     linear-gradient(135deg, #d8d0c3 0%, #b59b7d 100%);
 }
 
 .service-page-image-2 {
   background:
-    linear-gradient(rgba(0,0,0,0.02), rgba(0,0,0,0.02)),
+    linear-gradient(rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.02)),
     linear-gradient(135deg, #ddd4c7 0%, #c1aa8e 100%);
 }
 
 .service-page-image-3 {
   background:
-    linear-gradient(rgba(0,0,0,0.02), rgba(0,0,0,0.02)),
+    linear-gradient(rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.02)),
     linear-gradient(135deg, #d3c6b6 0%, #a98c70 100%);
 }
 
 .service-page-image-4 {
   background:
-    linear-gradient(rgba(0,0,0,0.02), rgba(0,0,0,0.02)),
+    linear-gradient(rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.02)),
     linear-gradient(135deg, #cebba8 0%, #96755b 100%);
 }
 
 .service-page-content {
   display: grid;
-  grid-template-rows: minmax(112px, auto) auto 1fr auto;
+  grid-template-rows: minmax(84px, auto) auto 1fr auto;
   row-gap: 12px;
   height: 100%;
 }
@@ -980,16 +981,17 @@ body.subpage .nav-links .contact-pill {
   align-items: center;
   justify-content: center;
   align-self: flex-start;
+  justify-self: start;
   margin-top: 14px;
-  min-width: 200px;
-  height: 58px;
-  padding: 0 26px;
+  min-width: 170px;
+  height: 52px;
+  padding: 0 22px;
   border-radius: 999px;
   border: 2px solid #1a1a1a;
   color: #111;
   background: transparent;
   font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 500;
   text-decoration: none;
 }
@@ -1019,9 +1021,9 @@ body.subpage .nav-links .contact-pill {
   }
 
   .service-page-button {
-    min-width: 180px;
-    height: 54px;
-    padding: 0 22px;
-    font-size: 0.92rem;
+    min-width: 160px;
+    height: 48px;
+    padding: 0 20px;
+    font-size: 0.88rem;
   }
 }
