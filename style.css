@@ -920,7 +920,7 @@ body.subpage .nav-links .contact-pill {
   background-repeat: no-repeat;
 }
 
-/* restore placeholders */
+/* placeholder images */
 .service-page-image-1 {
   background:
     linear-gradient(rgba(0,0,0,0.02), rgba(0,0,0,0.02)),
@@ -947,7 +947,7 @@ body.subpage .nav-links .contact-pill {
 
 .service-page-content {
   display: grid;
-  grid-template-rows: minmax(72px, auto) minmax(26px, auto) 1fr auto;
+  grid-template-rows: minmax(112px, auto) minmax(26px, auto) 1fr auto;
   row-gap: 22px;
   height: 100%;
 }
@@ -955,19 +955,10 @@ body.subpage .nav-links .contact-pill {
 .service-page-card h2 {
   margin: 0;
   font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: clamp(2.85rem, 3vw, 3.55rem);
+  font-size: clamp(2.65rem, 2.9vw, 3.35rem);
   font-weight: 400;
-  line-height: 0.96;
+  line-height: 0.98;
   letter-spacing: -0.01em;
-  white-space: nowrap;
-}
-
-.service-title-long {
-  font-size: clamp(2.55rem, 2.65vw, 3.15rem);
-}
-
-.service-title-longer {
-  font-size: clamp(2.18rem, 2.28vw, 2.75rem);
 }
 
 .service-price {
@@ -1003,22 +994,14 @@ body.subpage .nav-links .contact-pill {
   text-decoration: none;
 }
 
-@media (max-width: 1200px) {
-  .service-page-card h2,
-  .service-title-long,
-  .service-title-longer {
-    white-space: normal;
-  }
-
-  .service-page-content {
-    grid-template-rows: auto auto 1fr auto;
-  }
-}
-
 @media (max-width: 1100px) {
   .services-page-grid {
     grid-template-columns: 1fr;
     gap: 48px;
+  }
+
+  .service-page-content {
+    grid-template-rows: auto auto 1fr auto;
   }
 
   .service-description {
