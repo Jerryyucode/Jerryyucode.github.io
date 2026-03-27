@@ -80,6 +80,72 @@
 </div>
       
     </section>
+
+  <section class="contact-section">
+  <div class="contact-grid">
+    <div class="contact-left">
+      <h2>Contact Us</h2>
+      <p>
+        Contact us to learn more about tutoring, admissions guidance, and personalized
+        academic support, or to schedule a free 15-minute info session with our team.
+        We look forward to hearing from you.
+      </p>
+    </div>
+
+<div class="contact-right">
+  <div class="form-status-success" id="form-success" hidden>
+    Thank you. Your message has been submitted successfully.
+  </div>
+
+  <div class="form-status-error" id="form-error" hidden>
+    Something went wrong. Please try again.
+  </div>
+
+  <form
+    class="contact-form"
+    id="contact-form"
+    action="https://formspree.io/f/mgopvvbl"
+    method="POST"
+  >
+    <div class="form-block">
+      <label class="group-label">Name</label>
+
+      <div class="name-row">
+        <div class="field-group">
+          <label for="first-name">First Name <span>(required)</span></label>
+          <input id="first-name" name="first_name" type="text" required />
+        </div>
+
+        <div class="field-group">
+          <label for="last-name">Last Name <span>(required)</span></label>
+          <input id="last-name" name="last_name" type="text" required />
+        </div>
+      </div>
+    </div>
+
+    <div class="form-block">
+      <div class="field-group">
+        <label for="email">Email <span>(required)</span></label>
+        <input id="email" name="email" type="email" required />
+      </div>
+    </div>
+
+    <div class="form-block">
+      <div class="field-group">
+        <label for="message">Message <span>(required)</span></label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+    </div>
+
+    <input type="hidden" name="_subject" value="New StudyWise inquiry" />
+
+    <button type="submit" class="send-button" id="send-button">Send</button>
+  </form>
+</div>
+  </div>
+</section>
+
+    
   </main>
 
   <footer class="site-footer">
