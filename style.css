@@ -883,15 +883,15 @@ body.subpage .nav-links .contact-pill {
 }
 
 .services-page-section {
-  padding: 140px 32px 110px;
+  padding: 138px 32px 86px;
   background: #f4f2ee;
 }
 
 .services-page-section h1 {
   max-width: 1720px;
-  margin: 0 auto 72px;
+  margin: 0 auto 64px;
   font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: clamp(4.4rem, 5.8vw, 6.2rem);
+  font-size: clamp(4.2rem, 5.6vw, 6rem);
   font-weight: 400;
   line-height: 0.96;
 }
@@ -901,7 +901,7 @@ body.subpage .nav-links .contact-pill {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 70px 32px;
+  gap: 56px 32px;
   align-items: stretch;
 }
 
@@ -914,39 +914,74 @@ body.subpage .nav-links .contact-pill {
 .service-page-image {
   width: 100%;
   aspect-ratio: 1.75 / 1;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
+/* restore placeholders */
+.service-page-image-1 {
+  background:
+    linear-gradient(rgba(0,0,0,0.02), rgba(0,0,0,0.02)),
+    linear-gradient(135deg, #d8d0c3 0%, #b59b7d 100%);
+}
+
+.service-page-image-2 {
+  background:
+    linear-gradient(rgba(0,0,0,0.02), rgba(0,0,0,0.02)),
+    linear-gradient(135deg, #ddd4c7 0%, #c1aa8e 100%);
+}
+
+.service-page-image-3 {
+  background:
+    linear-gradient(rgba(0,0,0,0.02), rgba(0,0,0,0.02)),
+    linear-gradient(135deg, #d3c6b6 0%, #a98c70 100%);
+}
+
+.service-page-image-4 {
+  background:
+    linear-gradient(rgba(0,0,0,0.02), rgba(0,0,0,0.02)),
+    linear-gradient(135deg, #cebba8 0%, #96755b 100%);
+}
+
 .service-page-content {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: minmax(72px, auto) minmax(26px, auto) 1fr auto;
+  row-gap: 22px;
   height: 100%;
 }
 
 .service-page-card h2 {
-  margin: 0 0 22px;
+  margin: 0;
   font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: clamp(2.85rem, 3.15vw, 3.7rem);
+  font-size: clamp(2.85rem, 3vw, 3.55rem);
   font-weight: 400;
-  line-height: 0.98;
+  line-height: 0.96;
+  letter-spacing: -0.01em;
   white-space: nowrap;
 }
 
+.service-title-long {
+  font-size: clamp(2.55rem, 2.65vw, 3.15rem);
+}
+
+.service-title-longer {
+  font-size: clamp(2.18rem, 2.28vw, 2.75rem);
+}
+
 .service-price {
-  margin: 0 0 30px;
+  margin: 0;
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.45;
   white-space: nowrap;
 }
 
 .service-description {
-  margin: 0 0 42px;
+  margin: 0;
   max-width: 720px;
   font-size: 1.02rem;
-  line-height: 1.72;
+  line-height: 1.68;
 }
 
 .service-page-button {
@@ -954,7 +989,7 @@ body.subpage .nav-links .contact-pill {
   align-items: center;
   justify-content: center;
   align-self: flex-start;
-  margin-top: auto;
+  margin-top: 12px;
   min-width: 260px;
   height: 72px;
   padding: 0 34px;
@@ -968,21 +1003,22 @@ body.subpage .nav-links .contact-pill {
   text-decoration: none;
 }
 
-@media (max-width: 1400px) {
-  .service-page-card h2 {
-    font-size: clamp(2.4rem, 2.8vw, 3.2rem);
+@media (max-width: 1200px) {
+  .service-page-card h2,
+  .service-title-long,
+  .service-title-longer {
+    white-space: normal;
+  }
+
+  .service-page-content {
+    grid-template-rows: auto auto 1fr auto;
   }
 }
 
 @media (max-width: 1100px) {
   .services-page-grid {
     grid-template-columns: 1fr;
-    gap: 54px;
-  }
-
-  .service-page-card h2,
-  .service-price {
-    white-space: normal;
+    gap: 48px;
   }
 
   .service-description {
@@ -992,11 +1028,11 @@ body.subpage .nav-links .contact-pill {
 
 @media (max-width: 700px) {
   .services-page-section {
-    padding: 118px 20px 70px;
+    padding: 116px 20px 64px;
   }
 
   .services-page-section h1 {
-    margin-bottom: 48px;
+    margin-bottom: 44px;
   }
 
   .service-page-button {
