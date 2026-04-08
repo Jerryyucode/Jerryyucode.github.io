@@ -1039,3 +1039,101 @@ body.subpage .nav-links .contact-pill {
     font-size: 0.88rem;
   }
 }
+
+<!-- FAQ Page Design -->
+.faqs-section {
+  padding: 138px 32px 90px;
+  background: #f4f2ee;
+}
+
+.faqs-inner {
+  max-width: 1720px;
+  margin: 0 auto;
+}
+
+.faqs-inner h1 {
+  margin: 0 0 56px;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(4.2rem, 5.6vw, 6rem);
+  font-weight: 400;
+  line-height: 0.96;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-item {
+  border-top: 1px solid rgba(0, 0, 0, 0.18);
+}
+
+.faq-item:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+}
+
+.faq-question {
+  width: 100%;
+  padding: 26px 0;
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+  color: #111;
+}
+
+.faq-question span:first-child {
+  font-size: 1.08rem;
+  line-height: 1.5;
+}
+
+.faq-icon {
+  flex-shrink: 0;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 2rem;
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+
+.faq-answer {
+  display: none;
+  padding: 0 0 24px;
+  max-width: 980px;
+}
+
+.faq-answer p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.72;
+}
+
+.faq-item.open .faq-answer {
+  display: block;
+}
+
+.faq-item.open .faq-icon {
+  transform: rotate(45deg);
+}
+
+@media (max-width: 700px) {
+  .faqs-section {
+    padding: 116px 20px 64px;
+  }
+
+  .faqs-inner h1 {
+    margin-bottom: 40px;
+  }
+
+  .faq-question {
+    padding: 22px 0;
+  }
+
+  .faq-question span:first-child {
+    font-size: 1rem;
+  }
+}
