@@ -713,7 +713,7 @@ a {
 }
 
 
-<!-- About Subpage -->
+/* About Subpage */
 .subpage .site-header {
   background: #f8f7f4 !important;
   box-shadow:
@@ -1135,5 +1135,21 @@ body.subpage .nav-links .contact-pill {
 
   .faq-question span:first-child {
     font-size: 1rem;
+  }
+}
+
+.about-section,
+.services-page-section,
+.faqs-section,
+body.contact-page .contact-section {
+  padding-top: 138px;
+}
+
+@media (max-width: 700px) {
+  .about-section,
+  .services-page-section,
+  .faqs-section,
+  body.contact-page .contact-section {
+    padding-top: 116px;
   }
 }
