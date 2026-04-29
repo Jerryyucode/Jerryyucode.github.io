@@ -1042,7 +1042,7 @@ body.subpage .nav-links .contact-pill {
 
 <!-- FAQ Page Design -->
 .faqs-section {
-  padding: 138px 32px 90px;
+  padding: 178px 32px 90px;
   background: #f4f2ee;
 }
 
@@ -1122,7 +1122,7 @@ body.subpage .nav-links .contact-pill {
 
 @media (max-width: 700px) {
   .faqs-section {
-    padding: 116px 20px 64px;
+    padding: 148px 20px 64px;
   }
 
   .faqs-inner h1 {
